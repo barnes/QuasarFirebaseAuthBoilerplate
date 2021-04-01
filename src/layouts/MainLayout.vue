@@ -2,13 +2,13 @@
   <q-layout view="hHh lpR fFf">
     <q-header class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-          <h2>TagJournal</h2>
+          <h2>Quasar Firebase Auth Boilerplate</h2>
       </q-toolbar>
 
       <q-tabs align="right">
         <q-route-tab to="/" label="Home" />
         <q-route-tab v-if="!loggedIn" to="/login" label="Login" />
-        <q-route-tab v-if="loggedIn" to="/page2" label="My Journal" />
+        <q-route-tab v-if="loggedIn" to="/page2" label="My Account" />
         <q-route-tab v-if="loggedIn" to="/logout" label="Logout" />
       </q-tabs>
     </q-header>
